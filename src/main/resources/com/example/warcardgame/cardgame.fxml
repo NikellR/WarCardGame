@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="deck" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.warcardgame.WarGameController">
+   <children>
+      <Button fx:id="button" layoutX="171.0" layoutY="277.0" mnemonicParsing="false" onAction="#buttonPressed" text="Play Next Round">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="p1imageView" fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2imageView" fitHeight="150.0" fitWidth="200.0" layoutX="312.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="73.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text fill="RED" layoutX="348.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="655.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoreboard" underline="true" wrappingWidth="139.826171875">
+         <font>
+            <Font name="Britannic Bold" size="27.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6350710900473934">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.018518518656492233" blue="0.018518518656492233" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="644.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 Wins - ">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="644.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2 Wins - ">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text fx:id="playerOneWins" layoutX="783.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text fx:id="playerTwoWins" layoutX="784.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Text>
+      <Text fx:id="whoWon" layoutX="252.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6350710900473934">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.018518518656492233" blue="0.018518518656492233" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="winNums" layoutX="215.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6350710900473934">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.018518518656492233" blue="0.018518518656492233" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
